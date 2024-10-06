@@ -12,7 +12,12 @@ class InfoPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         centerTitle: true,
-        title: const Text('Passo a Passo'),
+        title: const Text(
+          'Passo a Passo',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       body: Center(
         child: Column(
@@ -31,7 +36,6 @@ class InfoPage extends StatelessWidget {
               instructionNum: '3',
               instructionText: 'Veja o quão saudável sua planta está.',
             ),
-            
             Padding(
               padding: const EdgeInsets.only(right: 10),
               child: Image.asset(
